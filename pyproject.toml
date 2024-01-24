@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "cysignals"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "sage_libgap"
+version = "0.0.0a1"
+authors = [
+  { name="LaiTeP and contributors" },
+]
+description = "Sage's LibGAP, without Sage."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["cysignals"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sage_libgap*"]
+
+[tool.setuptools.package-data]
+sage_libgap = ["**/*.pyx", "**/*.pxd", "*.gaprc"]
+
+[project.urls]
+Homepage = "https://github.com/laitep/sage-libgap"
+Issues = "https://github.com/laitep/sage-libgap/issues"
