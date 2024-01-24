@@ -36,7 +36,7 @@ In case you'd like to change something in Sage's LibGAP, here is how it was crea
 Therefore, if you want to change something, the workflow is:
 
 1. Check if the file you are editing is inside the `bootstrap` folder, and just edit it there (bear in mind that these files are meant to be patched by `extract_sage_libgap.py`, and as such are not expected to work by themselves).
-2. Edit the patches applied in the `extract_sage_libgap.py` script. The syntax and application for paths is fairly self-explanatory.
+2. Edit the patches applied in the `extract_sage_libgap.py` script. The syntax and application are fairly self-explanatory.
 
 ## Troubleshooting
 
@@ -44,5 +44,5 @@ This is still an early release, so problems are expected. This section will be u
 
 ## References
 
-- [SageMath: a free open-source mathematics software system]("https://www.sagemath.org/") by `The SageMath Developers`. Distributed under GPLv2+.
+- [SageMath: a free open-source mathematics software system](https://www.sagemath.org/) by `The SageMath Developers`. Distributed under GPLv2+.
 - [gappy: a Python interface to GAP](https://github.com/embray/gappy) by `E. M. Bray`. Distributed under GPLv3+.
